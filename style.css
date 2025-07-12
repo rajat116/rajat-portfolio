@@ -56,10 +56,11 @@ body {
 }
 
 .hero-image img {
+  height: 90%;
   width: auto;
-  height: 85%;
-  max-height: 600px;
-  max-width: 400px;
+  max-height: 700px;
+  max-width: none;
+  object-fit: contain;
   filter: grayscale(100%);
 }
 
