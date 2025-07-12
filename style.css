@@ -18,7 +18,7 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  background: #0a0a0a;
+  background: #000000;
   z-index: 100;
 }
 
@@ -52,7 +52,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #0a0a0a;
+  background-color: #000000;
 }
 
 .hero-image img {
@@ -65,8 +65,8 @@ body {
 
   /* ✅ Position tweak */
   position: relative;
-  top: -40px;    /* Move up */
-  left: 20px;    /* Move right */
+  top: -40px;
+  left: 20px;
 }
 
 .hero-text {
@@ -79,7 +79,7 @@ body {
 }
 
 .hero-text h1 {
-  font-size: 5rem;
+  font-size: 6rem;
   font-weight: 700;
   margin-bottom: 10px;
 }
@@ -92,8 +92,8 @@ body {
 }
 
 .hero-text p {
-  margin-top: 50px;
-  font-size: 1.5rem;
+  margin-top: 20px;
+  font-size: 1.25rem;
   color: #ccc;
   max-width: 480px;
 }
@@ -102,7 +102,8 @@ body {
   margin-top: 30px;
 }
 
-.btn, .btn-outline {
+.btn,
+.btn-outline {
   padding: 12px 26px;
   border-radius: 30px;
   font-weight: 600;
@@ -122,7 +123,8 @@ body {
   color: #a78bfa;
 }
 
-.btn:hover, .btn-outline:hover {
+.btn:hover,
+.btn-outline:hover {
   background: #7c3aed;
   color: white;
   border-color: #7c3aed;
@@ -151,19 +153,42 @@ footer {
   font-size: 0.9rem;
 }
 
-/* Responsive Design */
+/* ✅ Responsive Design */
 @media (max-width: 768px) {
   .hero {
     flex-direction: column;
     text-align: center;
+    height: auto;
+  }
+
+  .hero-image img {
+    height: auto;
+    width: 75%;
+    top: 0;
+    left: 0;
+    margin: 20px auto 0;
   }
 
   .hero-text {
     padding: 40px 20px;
   }
 
-  .hero-image img {
-    width: 60%;
-    margin-top: 40px;
+  .hero-text h1 {
+    font-size: 3rem;
+  }
+
+  .hero-text h2 {
+    font-size: 2rem;
+    height: auto;
+  }
+
+  .hero-text p {
+    font-size: 1.1rem;
+    margin: 20px auto;
+    max-width: 90%;
+  }
+
+  .buttons {
+    margin-top: 25px;
   }
 }
