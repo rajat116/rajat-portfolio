@@ -55,13 +55,13 @@ body {
   background-color: #0a0a0a;
 }
 
-.hero-image img {
-  height: 90vh;
-  width: auto;
-  max-width: 100%;
-  object-fit: cover;
-  filter: grayscale(100%);
-  display: block;
+.hero-image {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;  /* Instead of center */
+  justify-content: center;
+  padding-top: 40px; /* Raise image slightly */
+  background-color: #0a0a0a;
 }
 
 .hero-text {
