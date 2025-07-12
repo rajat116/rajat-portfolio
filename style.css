@@ -65,7 +65,7 @@ body {
 
   /* ✅ Position tweak */
   position: relative;
-  top: -40px;
+  top: -60px;
   left: 20px;
 }
 
@@ -81,7 +81,7 @@ body {
 .hero-text h1 {
   font-size: 6rem;
   font-weight: 700;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .hero-text h2 {
