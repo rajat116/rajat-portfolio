@@ -5,18 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>GitHub Anomaly Detection | Rajat Gupta</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
+  <!-- Navbar -->
   <nav class="navbar">
     <div class="logo">RG</div>
+
+    <div class="menu-toggle" id="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
     <div class="nav-links">
       <a href="index.html">Home</a>
-      <a href="projects.html">Projects</a>
+      <a href="projects.html" class="nav-home">Projects</a>
       <a href="assets/resume.pdf" target="_blank">Resume</a>
-      <a href="#contact">Contact</a>
+      <a href="index.html#contact">Contact</a>
     </div>
   </nav>
 
+  <!-- Main Project Content -->
   <main class="project-detail">
     <div class="project-header">
       <img src="assets/banner.png" alt="GitHub Anomaly Banner" />
@@ -42,8 +52,24 @@
     </div>
   </main>
 
-  <footer>
-    &copy; 2025 Rajat Gupta. All rights reserved.
+  <!-- Footer -->
+  <footer class="footer">
+    <h2><span class="gradient-text">Rajat Gupta</span></h2>
+    <div class="footer-nav">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+    <div class="social-icons">
+      <a href="https://linkedin.com/in/dr-rajat-gupta-a4a77391" target="_blank" class="social-btn linkedin-icon"></a>
+      <a href="https://github.com/rajat116" target="_blank" class="social-btn github-icon"></a>
+      <a href="https://t.me/rajat1161" target="_blank" class="social-btn telegram-icon"></a>
+    </div>
+    <p>&copy; 2025 Rajat Gupta. All rights reserved.<br />Data Scientist & Researcher</p>
   </footer>
+
+  <!-- JS for Menu Toggle -->
+  <script src="script.js"></script>
 </body>
 </html>

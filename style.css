@@ -38,6 +38,10 @@ body {
   letter-spacing: 1px;
 }
 
+.nav-links {
+  display: flex;
+}
+
 .nav-links a {
   margin-left: 25px;
   text-decoration: none;
@@ -45,15 +49,23 @@ body {
   font-weight: 500;
 }
 
-.nav-links a:hover {
+.nav-links a:hover,
+.nav-links a.active {
   color: #fff;
   border-bottom: 2px solid #a78bfa;
 }
 
-.nav-links a.nav-home {
-  color: #a78bfa;
-  font-weight: 700;
-  border-bottom: 2px solid #a78bfa;
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  background: #fff;
+  height: 3px;
+  width: 25px;
+  margin: 4px 0;
 }
 
 /* === Hero Section === */
@@ -125,6 +137,7 @@ body {
   font-weight: 600;
   text-decoration: none;
   margin-right: 15px;
+  margin-bottom: 12px;
   display: inline-block;
   transition: all 0.3s ease-in-out;
 }
@@ -472,12 +485,37 @@ ul {
 .footer .social-icons {
   display: flex;
   justify-content: center;
+  flex-direction: row;
   margin-top: 16px;
   gap: 12px;
 }
 
 /* === Responsive Fixes === */
 @media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav-links {
+    width: 100%;
+    flex-direction: column;
+    display: none;
+    margin-top: 10px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links a {
+    margin: 10px 0;
+  }
+
   .hero {
     flex-direction: column;
     text-align: center;
@@ -514,4 +552,36 @@ ul {
   .buttons {
     margin-top: 25px;
   }
+
+  .about-grid {
+    flex-direction: column;
+  }
+
+  .projects-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer .social-icons {
+    flex-direction: row; /* ensure horizontal alignment */
+    gap: 10px;
+  }
+}
+
+/* === Section Highlighting (JavaScript adds .active class) === */
+.nav-links a.active {
+  color: #a78bfa;
+  font-weight: 700;
+  border-bottom: 2px solid #a78bfa;
 }
