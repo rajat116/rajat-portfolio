@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Projects | Rajat Gupta</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">RG</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="projects.html" class="nav-home">Projects</a>
+      <a href="assets/resume.pdf" target="_blank">Resume</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <main class="projects-section">
+    <h2 class="section-title">My Projects</h2>
+    <p class="section-subtitle">A showcase of my work in artificial intelligence and software development.</p>
+
+    <div class="projects-grid">
+      <a href="project-github-anomaly.html" class="project-card" data-aos="fade-up">
+        <img src="assets/banner.png" alt="GitHub Anomaly Detection" />
+        <div class="project-info">
+          <span class="tag">MLOps</span>
+          <h4>GitHub Anomaly Detection</h4>
+          <p>Real-time anomaly detection system using Airflow, MLflow, and Streamlit.</p>
+        </div>
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Rajat Gupta. All rights reserved.
+  </footer>
+
+  <!-- AOS Scroll Animation -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true
+    });
+  </script>
+</body>
+</html>
