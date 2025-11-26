@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Credit Risk Scoring | Rajat Gupta</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="index.html" class="logo">RG</a>
+
+    <div class="menu-toggle" id="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="projects.html" class="nav-home">Projects</a>
+      <a href="index.html#about">About</a>
+      <a href="assets/resume.pdf" target="_blank">Resume</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Main Project Content -->
+  <main class="project-detail">
+    
+    <!-- Header -->
+    <div class="project-header">
+      <img src="assets/credit-risk-banner.png" alt="Credit Risk & Behaviour Scoring" />
+      <h1>Customer Credit Risk & Behaviour Scoring</h1>
+
+      <a class="project-link" href="https://github.com/rajat116/customer-credit-risk-behavior-suite" target="_blank">
+        📂 View Code on GitHub
+      </a>
+    </div>
+
+    <!-- Labels -->
+    <div class="project-content">
+      <span class="tag">Machine Learning</span>
+      <span class="tag">FastAPI</span>
+      <span class="tag">Streamlit</span>
+      <span class="tag">MLOps</span>
+
+      <!-- Description -->
+      <p>
+        A full end-to-end machine learning system for <strong>credit risk modeling</strong> that predicts:
+      </p>
+
+      <ul>
+        <li><strong>Probability of Default (PD)</strong> using XGBoost</li>
+        <li><strong>Loss Given Default (LGD)</strong> using LightGBM</li>
+        <li><strong>Expected Loss (PD × LGD)</strong></li>
+        <li><strong>Customer Segmentation</strong> using KMeans</li>
+        <li><strong>Behavioural Anomaly Detection</strong> using Isolation Forest</li>
+        <li><strong>Autoencoder embeddings</strong> for deep behavioural representation</li>
+        <li><strong>Default-rate time-series forecasting</strong> with ARIMA</li>
+      </ul>
+
+      <p>
+        The project includes a complete data → model → deployment pipeline with a 
+        <strong>FastAPI microservice</strong> for real-time scoring and a 
+        <strong>Streamlit dashboard</strong> with human-friendly inputs, tooltips, and live predictions.
+      </p>
+
+      <!-- System Architecture -->
+      <h3>System Architecture</h3>
+      <ul>
+        <li><strong>DuckDB</strong> for fast SQL-based feature engineering</li>
+        <li><strong>XGBoost & LightGBM</strong> for PD/LGD modeling</li>
+        <li><strong>PyTorch Autoencoder</strong> for behavioural embeddings</li>
+        <li><strong>statsmodels</strong> for ARIMA forecasting</li>
+        <li><strong>FastAPI</strong> REST service with model caching</li>
+        <li><strong>Dockerized</strong> backend for reproducible deployment</li>
+        <li><strong>Streamlit UI</strong> for scoring and visualizations</li>
+      </ul>
+
+      <p>
+        This project showcases full-stack ML engineering: data cleaning, feature pipelines, supervised + unsupervised models,
+        deep learning, microservice deployment, dashboarding, and documentation.
+      </p>
+
+      <!-- Tech Stack -->
+      <h3>Tech Stack</h3>
+      <p>
+        Python, DuckDB, XGBoost, LightGBM, PyTorch, scikit-learn, statsmodels, FastAPI, Streamlit, Docker.
+      </p>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <h2><span class="gradient-text">Rajat Gupta</span></h2>
+    <div class="footer-nav">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+    <div class="social-icons">
+      <a href="https://linkedin.com/in/dr-rajat-gupta-a4a77391" target="_blank" class="social-btn linkedin-icon"></a>
+      <a href="https://github.com/rajat116" target="_blank" class="social-btn github-icon"></a>
+      <a href="https://t.me/rajat1161" target="_blank" class="social-btn telegram-icon"></a>
+    </div>
+    <p>&copy; 2025 Rajat Gupta. All rights reserved.<br />Data Scientist & Researcher</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
