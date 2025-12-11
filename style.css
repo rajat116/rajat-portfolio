@@ -21,7 +21,7 @@ body {
   display: flex;
   justify-content: space-between;
   font-size: 1.2rem;
-  padding: 20px 40px;
+  padding: 20px 40px; 
   position: fixed;
   top: 0;
   width: 100%;
@@ -237,7 +237,7 @@ ul {
 .btn-outline.view-all {
   margin-top: 40px;
   padding: 10px 20px;
-  font-size: 1rem;
+  font-size: 1rem; 
   border-radius: 25px;
   display: inline-block;
   border: 2px solid #a78bfa;
@@ -292,8 +292,7 @@ ul {
   gap: 40px;
 }
 
-.about-left,
-.about-right {
+.about-left, .about-right {
   flex: 1;
   min-width: 300px;
 }
@@ -358,7 +357,7 @@ ul {
   border-radius: 16px;
   max-width: 600px;
   margin: 0 auto;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
   color: #fff;
   text-align: left;
 }
@@ -575,12 +574,12 @@ ul {
   }
 
   .footer .social-icons {
-    flex-direction: row;
+    flex-direction: row; /* ensure horizontal alignment */
     gap: 10px;
   }
 }
 
-/* === Section Highlighting === */
+/* === Section Highlighting (JavaScript adds .active class) === */
 .nav-links a.active {
   color: #a78bfa;
   font-weight: 700;
