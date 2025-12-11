@@ -194,16 +194,17 @@ ul {
 }
 
 .projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 30px;
+  justify-content: center;
 }
 
 .project-card {
   background: #181818;
   border-radius: 15px;
   overflow: hidden;
-  max-width: 300px;
+  width: 300px; /* Important: keeps uniform card sizes */
   transition: transform 0.3s ease;
   text-align: left;
   color: inherit;
