@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YOLO Distillation for Robotics | Rajat Gupta</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="index.html" class="logo">RG</a>
+
+    <div class="menu-toggle" id="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="projects.html" class="nav-home">Projects</a>
+      <a href="index.html#about">About</a>
+      <a href="assets/resume.pdf" target="_blank">Resume</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Main Project Content -->
+  <main class="project-detail">
+
+    <!-- Header -->
+    <div class="project-header">
+      <img src="assets/robotics-banner.png" alt="Robotics Object Detection Banner" />
+      <h1>YOLO Distillation for Robotics Object Detection</h1>
+
+      <a class="project-link" href="https://github.com/rajat116/robotics-distilled-objectdetection" target="_blank">
+        📂 View Code on GitHub
+      </a>
+    </div>
+
+    <!-- Labels -->
+    <div class="project-content">
+
+      <span class="tag">Computer Vision</span>
+      <span class="tag">MLOps</span>
+      <span class="tag">YOLOv8</span>
+      <span class="tag">Knowledge Distillation</span>
+      <span class="tag">FastAPI</span>
+      <span class="tag">AWS</span>
+
+      <!-- Short Description -->
+      <p>
+        A lightweight, production-ready <strong>object detection pipeline</strong> designed for robotics, where
+        <strong>latency</strong>, <strong>model size</strong>, and <strong>real-time performance</strong> matter most.
+        The system uses <strong>knowledge distillation</strong> to transfer accuracy from a YOLOv8s teacher model into a
+        compact YOLOv8n student — ideal for edge devices and constrained hardware.
+      </p>
+
+      <h3>What This Project Includes</h3>
+      <ul>
+        <li>YOLOv8 teacher → student <strong>knowledge distillation</strong></li>
+        <li>End-to-end <strong>MLOps pipeline</strong> from training to deployment</li>
+        <li><strong>MLflow Model Registry</strong> for version control & experiment tracking</li>
+        <li><strong>Airflow orchestration</strong> for scheduled retraining & drift detection</li>
+        <li>Real-time inference via <strong>FastAPI</strong> (with Prometheus latency metrics)</li>
+        <li>AWS-based training and artifact storage using <strong>EC2 + S3</strong></li>
+      </ul>
+
+      <h3>Tech Stack</h3>
+      <p>
+        Python, YOLOv8, PyTorch, MLflow, Apache Airflow, AWS EC2/S3, Docker, FastAPI, Prometheus.
+      </p>
+
+      <p>
+        Full details, metrics, and visual results are available in the project’s GitHub README.
+      </p>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <h2><span class="gradient-text">Rajat Gupta</span></h2>
+    <div class="footer-nav">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+    <div class="social-icons">
+      <a href="https://linkedin.com/in/dr-rajat-gupta-a4a77391" target="_blank" class="social-btn linkedin-icon"></a>
+      <a href="https://github.com/rajat116" target="_blank" class="social-btn github-icon"></a>
+      <a href="https://t.me/rajat1161" target="_blank" class="social-btn telegram-icon"></a>
+    </div>
+    <p>&copy; 2025 Rajat Gupta. All rights reserved.<br />Data Scientist & Researcher</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
