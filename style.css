@@ -195,20 +195,16 @@ ul {
 
 .projects-grid {
   display: flex;
-  flex-wrap: wrap;
   gap: 30px;
-  justify-content: center;
+  overflow-x: auto;
+  padding: 20px 0;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
 }
 
 .project-card {
-  background: #181818;
-  border-radius: 15px;
-  overflow: hidden;
-  width: 300px; /* Important: keeps uniform card sizes */
-  transition: transform 0.3s ease;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
+  flex: 0 0 300px;
+  scroll-snap-align: start;
 }
 
 .project-card:hover {
@@ -555,11 +551,6 @@ ul {
 
   .about-grid {
     flex-direction: column;
-  }
-
-  .projects-grid {
-    flex-direction: column;
-    align-items: center;
   }
 
   .contact-row {
